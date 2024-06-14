@@ -7,6 +7,11 @@ const toImage=document.getElementById("toimage");
 const fromDropdown=document.getElementById("from-dropdown");
 const toDropdown=document.getElementById("to-dropdown");
 
+window.addEventListener("load",function(){
+
+    input.value=1;
+    updateExchangeRate();
+});
 
 for(let j=0;j<dropdowns.length;j++)
 {
@@ -63,6 +68,12 @@ function updateFlag(target)
 submitBtn.addEventListener("click",async function(e){
 
     e.preventDefault();
+    updateExchangeRate();
+});
+
+
+async function updateExchangeRate(){
+
     let fromCurrencyCode=fromDropdown.value;
     let fromCountryCode=countryList[fromCurrencyCode];
     let toCurrencyCode=toDropdown.value;
@@ -77,15 +88,14 @@ submitBtn.addEventListener("click",async function(e){
     // console.log(exchangeRate);
     // console.log(baseCurrencyCode[toCurrencyCode.toLowerCase()]);
 
-    if((input.value<0) ||(typeof(input.value)=="string"))     //(input.value==="")  will be also included in the string case
+    if((input.value<0)||(input.value==="")) 
     {
         alert("please enter a valid amount!");
         input.value=1;      // or "1" will also work
     }
     msg.innerText=`${input.value} ${fromCurrencyCode} = ${exchangeRate*(input.value)} ${toCurrencyCode}`;
 
-});
-
+}
 
 
 
