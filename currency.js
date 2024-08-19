@@ -96,15 +96,3 @@ async function updateExchangeRate(){
     msg.innerText=`${input.value} ${fromCurrencyCode} = ${exchangeRate*(input.value)} ${toCurrencyCode}`;
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
