@@ -1,77 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>currency convertor</title>
-    <link rel="stylesheet" href="currency.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>currency convertor</title>
+        <link rel="stylesheet" href="currency.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+            integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+    </head>
+    <body>
+        <div class="container">
+            <!-- heading -->
+            <h2 id="heading">Currency Convertor</h2>
 
-    <div class="container">
+            <!-- form -->
+            <form action="#" id="form">
+                <!-- amount -->
+                <div id="amount-section">
+                    <p id="enter-amount">Enter Amount</p>
+                    <input type="text" id="input" placeholder="enter the amount" />
+                </div>
 
-        <!-- heading -->
-        <h2 id="heading">Currency Convertor</h2>
+                <div id="main-section">
+                    <!-- from -->
+                    <div id="from-container">
+                        <p>From</p>
+                        <div id="from">
+                            <img
+                                src="https://flagsapi.com/US/flat/64.png"
+                                class="image"
+                                id="fromimage"
+                            />
+                            <select name="from" class="dropdown" id="from-dropdown"></select>
+                        </div>
+                    </div>
 
+                    <!-- arrow icon -->
+                    <i class="fa-solid fa-arrow-right-arrow-left" id="arrow-icon"></i>
 
-        <!-- form -->
-        <form action="#" id="form">
-            
-            <!-- amount -->
-            <div id="amount-section">
-                <p id="enter-amount">Enter Amount</p>
-                <input type="text" id="input" placeholder="enter the amount">
-            </div>
-
-
-
-           <div id="main-section">
-
-                <!-- from -->
-                <div id="from-container">
-                    <p>From</p>
-                    <div id="from">
-                        <img src="https://flagsapi.com/US/flat/64.png" class="image" id="fromimage">
-                        <select name="from"  class="dropdown" id="from-dropdown"></select>
+                    <!-- to -->
+                    <div id="to-container">
+                        <p>To</p>
+                        <div id="to">
+                            <img
+                                src="https://flagsapi.com/IN/flat/64.png"
+                                class="image"
+                                id="toimage"
+                            />
+                            <select name="to" class="dropdown" id="to-dropdown"></select>
+                        </div>
                     </div>
                 </div>
 
+                <!-- message -->
+                <div id="msg"></div>
 
-
-                <!-- arrow icon -->
-                <i class="fa-solid fa-arrow-right-arrow-left"  id="arrow-icon"></i>
-
-
-
-                <!-- to -->
-                <div id="to-container">
-                    <p>To</p>
-                    <div id="to">
-                        <img src="https://flagsapi.com/IN/flat/64.png" class="image" id="toimage">
-                        <select name="to"  class="dropdown" id="to-dropdown"></select>
-                    </div>
+                <!-- submit button -->
+                <div class="button">
+                    <button id="get-exchange-rate" type="submit">Get Exchange Rate</button>
+                    <!--by default every button inside of form tag is a submit button-->
                 </div>
+            </form>
+        </div>
 
-            </div>
-
-            <!-- message -->
-            <div id="msg"></div>
-
-            <!-- submit button -->
-            <div class="button">
-                <button id="get-exchange-rate" type="submit">Get Exchange Rate</button>      <!--by default every button inside of form tag is a submit button-->
-            </div>
-
-        </form>
-
-    </div>
-
-
-
-
-
-    <script src="codes.js"></script>
-    <script src="currency.js"></script>
-</body>
+        <script src="codes.js"></script>
+        <script src="currency.js"></script>
+    </body>
 </html>
