@@ -14,7 +14,6 @@ body{
 
 .container
 {
-    /* padding:35px 35px 50px 35px; */
     border-radius: 15px;
     background-color: white;
     width:450px;
@@ -30,6 +29,7 @@ body{
     font-weight: bolder;
     margin-bottom: 50px;
 }
+
 #amount-section
 {
     margin-bottom: 40px ;
@@ -37,6 +37,7 @@ body{
     font-size:1.1rem;
 
 }
+
 input{
     border-radius: 10px;
     padding:15px 9px;
@@ -44,6 +45,7 @@ input{
     width:100%;
     font-size: 1rem;
 }
+
 #main-section
 {
     display: flex;
@@ -51,6 +53,7 @@ input{
     align-items: center;
     margin-bottom:40px;
 }
+
 #main-section i{
     font-size:25px;
     margin-top:20px;
@@ -61,6 +64,7 @@ input{
     font-size: 1.1rem;
     font-weight: 350;
 }
+
 #from ,#to
 {
     border:1px solid #cbcbcb;
@@ -74,14 +78,15 @@ input{
 {
     border:none;
     font-size: 18px;
-    /* padding:15px; */
     width:80px;
     height: 40px;
 }
+
 img
 {
     width:40px;
 }
+
 #get-exchange-rate
 {
     background-color:#ae5fae;
@@ -101,6 +106,13 @@ img
     justify-content: center;
     padding:0 10px;
 }
+
+button:hover{
+    scale: 1.05;
+    transition: all 300ms;
+    cursor: pointer;
+}
+
 #msg
 {
     text-align: center;
